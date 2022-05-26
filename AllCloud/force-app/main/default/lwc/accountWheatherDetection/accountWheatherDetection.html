@@ -1,0 +1,19 @@
+<template>
+    <lightning-record-view-form object-api-name={objectApiName} record-id={recordId}>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col  slds-size_1-of-2 slds-p-left_x-small slds-p-right_x-small slds-m-bottom_x-small">
+                <lightning-formatted-address
+                    city={accCity} 
+                    country={accCountry} 
+                    postal-code={accPostalcode} 
+                    province={accState} 
+                    street={accStreet}
+                    show-static-map>
+                </lightning-formatted-address>
+            </div>
+            <div class="slds-col  slds-size_1-of-2 slds-p-left_x-small slds-p-right_x-small slds-m-bottom_x-small">
+                {weather}
+            </div>
+        </div>
+    </lightning-record-view-form>
+</template>
